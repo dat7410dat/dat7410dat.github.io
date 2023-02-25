@@ -3,12 +3,16 @@ import code_highlight from "lume/plugins/code_highlight.ts";
 import katex from "lume/plugins/katex.ts";
 import multilanguage from "lume/plugins/multilanguage.ts";
 import windi_css from "lume/plugins/windi_css.ts";
+import metas from "lume/plugins/metas.ts";
 
-const site = lume();
+const site = lume({
+    src: "./src",
+});
 
 site.use(code_highlight());
 site.use(katex());
 site.use(multilanguage());
 site.use(windi_css());
+site.use(metas());
 
 export default site;
