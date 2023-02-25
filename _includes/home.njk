@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+</head>
+<body>
+
+<header>
+  {{ content | safe }}
+</header>
+  <style lang="windi">
+  body{
+    background-color:#ccfbf1;
+  }
+  h1{
+    @apply text-6xl my-8;
+  }
+  header{
+  @apply flex flex-col items-center my-32;  
+  }</style>
+</body>
+</html>
