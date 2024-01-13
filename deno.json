@@ -4,7 +4,12 @@
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ]
+  },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.15.3/"
+    "lume/": "https://deno.land/x/lume@v2.0.3/"
   }
 }
